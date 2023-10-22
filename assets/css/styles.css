@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";
+    gap: 10px;
+    background-color: #e7e7e7;
+    }
+
+    .grid-container2 {
+        margin-top: 5px;
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+        "producto1 producto2 producto3"
+        "producto4 producto4 producto4";
+        background-color: #e7e7e7;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    
+
+header{
+    grid-area: header;
+    background-color: #25527b;
+    
+}
+
+menu {
+    grid-area: menu;
+    background-color: #e7e7e7;
+    width: 150px;
+}
+
+    main{
+    grid-area: main;
+    background-color: #e7e7e7;
+ }
+
+    footer{
+    grid-area: footer;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.navbar {
+    background-color: #25527b;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.main {
+    background-color: #e7e7e7;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #e7e7e7;
+}
+
+
+.picture {
+    width: 180px;
+    margin: 5px;
+}
+
+  .flex-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    width: 225px;
+  }
+
+  .flex-container p {
+    margin: 5px;
+  }
+
+  .price {
+    color: #575757;
+  }
+
+  .buybutton {
+ background-color: #25527b; 
+        color: white;
+        width: 225px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 2px;
+    
+  }
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(48, 48, 48);
+    text-align: center;
+    padding: 2px;
+    margin: 10px;
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: medium;
+  }
+
+  .sidebar p {
+    margin: 3px;
+  }
+
+  .sidebar h3 {
+    margin-bottom: 6px;
+  }
